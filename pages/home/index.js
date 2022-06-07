@@ -1,5 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Hero from '../../Components/HomePage/Hero/Hero'
+import MainNavigation from '../../Components/SharedComponents/MainNavigation/MainNavigation'
 
 import classes from '../../styles/Home.module.scss'
 
@@ -12,7 +14,8 @@ const HomePage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
         <main className={classes['page-container']}>
-            <h1>Home Page</h1>
+        <MainNavigation />
+            <Hero />
         </main>
         </>
     )
