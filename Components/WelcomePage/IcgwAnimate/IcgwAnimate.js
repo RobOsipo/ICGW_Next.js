@@ -4,7 +4,7 @@ import classes from "./IcgwAnimate.module.css";
 
 const IcgwAnimate = () => {
   return (
-    <div class={classes.typewriter}>
+    <div className={classes.typewriter}>
       <h1>Please Click To Enter.</h1>
     </div>
   );
