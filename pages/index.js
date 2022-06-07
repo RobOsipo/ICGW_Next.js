@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import LogoFlip from '../Components/WelcomePage/LogoFlip/LogoFlip'
+import IcgwAnimate from '../Components/WelcomePage/IcgwAnimate/IcgwAnimate'
 
 import classes from '../styles/Welcome.module.scss'
 
@@ -15,7 +16,14 @@ export default function Welcome() {
       </Head>
     <main className={classes['page-container']}>
      
-      <h1>Welcome Page</h1>
+     
+
+
+    <IcgwAnimate />
+
+
+     
+
       <LogoFlip />
     
      

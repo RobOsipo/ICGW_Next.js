@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
 :root {
   // colors
   --black: #000;
@@ -10,6 +10,8 @@
   --fog-white-two: #e4f1f1;
   --teel: #119da4;
   --beige: #f4d58d;
+  --red: #8D0801;
+  --yellow: #FFC145;
   --light-blue: #b7d7e8;
   --med-blue: #87bdd8;
   --dark-blue: #667292;
@@ -20,6 +22,7 @@
   // Typography
   --lato: "Lato", sans-serif;
   --sans: "Open Sans", "Lato", sans-serif;
+  --professional: 'Nuosu SIL', serif;
 
   // Spacing
   --space-xxxs: 0.25em;
@@ -62,6 +65,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: var(--sans);
   background-color: var(--fog-black-two);
   color: var(--fog-white);
@@ -76,6 +80,7 @@ h6 {
   font-family: var(--lato);
   color: var(--fog-white);
   margin: 0;
+  padding: 0;
 }
 
 ul {

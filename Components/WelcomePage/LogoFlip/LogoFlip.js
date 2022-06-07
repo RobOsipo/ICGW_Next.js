@@ -1,4 +1,5 @@
 import React from "react";
+import BasicCrosshairs from '../../../svg/BasicCrosshairs'
 
 import classes from "./LogoFlip.module.scss";
 
@@ -10,11 +11,10 @@ const LogoFlip = () => {
             <div className={classes.front}>
                 <h1>I G</h1>
                 <h1>C W</h1>
-                {/* <h1>G</h1>
-                <h1>W</h1> */}
+                
             </div>
             <div className={classes.back}>
-
+                <BasicCrosshairs />
             </div>
         </div>
       </div>

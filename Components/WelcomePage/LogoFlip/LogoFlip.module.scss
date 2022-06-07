@@ -4,7 +4,7 @@
 
 .card {
   position: relative;
-  background: transparent;
+  background: var(--fog-black-two);
   color: var(--fog-white);
   text-align: center;
   border: solid 2px var(--fog-white);
@@ -21,6 +21,8 @@
 
 .front,
 .back {
+background-color: var(--fog-black-two);
+border: solid 0.5px var(--fog-white);
   position: absolute;
   top: 0;
   left: 0;
@@ -35,9 +37,14 @@
 
     h1 {
         font-size: 8rem;
+        // font-family: var(--professional);
+       
+        
     }
 }
 
 .back {
   transform: rotateY(180deg);
+  display: grid;
+  place-content: center;
 }
