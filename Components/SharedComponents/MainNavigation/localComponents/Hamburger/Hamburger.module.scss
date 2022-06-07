@@ -2,26 +2,27 @@
 .input-box {
     display: none;
 }
+
   
   .dropdown { 
     display: flex;
     justify-content: space-between;
+    &:hover {
+        cursor: pointer;
+    }
   }
   
   .hamburger { 
     align-self: flex-end;
   }
   
-  .dropdown {
-    cursor: pointer;
-  }
   
   input[type=checkbox] + label {
     .icon-bar {
       display: block;
-      width: 22px;
-      height: 2px;
-      background-color: #cccccc;
+      width: 32px;
+      height: 5px;
+      background-color: var(--fog-white);
       margin: 4px;
       transition: all 0.2s;
     }
