@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
 
 :root {
- /* colors */
+  // colors
   --black: #000;
   --white: #fff;
-  --fog-black: #0F1A20;
+  --fog-black: #0f1a20;
   --fog-black-two: #0f1112;
-  --fog-white: #F6F7EB;
+  --fog-white: #f6f7eb;
   --fog-white-two: #e4f1f1;
-  --teel: #119DA4;
-  --beige: #F4D58D;
+  --teel: #119da4;
+  --beige: #f4d58d;
 
   --light-blue: #b7d7e8;
   --med-blue: #87bdd8;
@@ -19,24 +19,56 @@
   --rustic-light: #c8c3cc;
   --rustic-dark: #484f4f;
 
-  /* Typography */
+  // Typography
 
-  --lato: 'Lato', sans-serif;
-  --sans: 'Open Sans', 'Lato', sans-serif;
+  --lato: "Lato", sans-serif;
+  --sans: "Open Sans", "Lato", sans-serif;
+
+  // Spacing
+  --space-xxxs: 0.25em;
+  --space-xxs: 0.375em;
+  --space-xs: 0.5em;
+  --space-sm: 0.75em;
+  --space-md: 1.25em;
+  --space-lg: 2em;
+  --space-xl: 3.25em;
+  --space-xxl: 5.25em;
+  --space-xxxl: 8.5em;
+
+  // media queries
+  --tablet: 768px;
+  --large: 1024px;
+  --desktop: 1280px;
 }
 
+@mixin tablet {
+  @media (min-width: var(--tablet)) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: var(--large)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: var(--desktop)) {
+    @content;
+  }
+}
 
 * {
   box-sizing: border-box;
 }
-
 
 body {
   margin: 0;
   font-family: var(--sans);
   background-color: var(--fog-black-two);
   color: var(--fog-white);
-} 
+}
 
 h1,
 h2,
@@ -58,5 +90,3 @@ ul {
   margin: auto;
   text-align: center;
 }
-
-
