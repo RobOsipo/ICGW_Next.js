@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Hero from '../../Components/HomePage/Hero/Hero'
 import MainNavigation from '../../Components/SharedComponents/MainNavigation/MainNavigation'
 import ImageCarousel from '../../Components/HomePage/ImageCarousel/ImageCarousel'
+import Footer from '../../Components/SharedComponents/Footer/Footer'
 
 import classes from '../../styles/Home.module.scss'
 
@@ -18,6 +19,8 @@ const HomePage = () => {
         <MainNavigation />
             <Hero />
             <ImageCarousel />
+            <Footer />
+
         </main>
         </>
     )
