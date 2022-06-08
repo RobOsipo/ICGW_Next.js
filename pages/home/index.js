@@ -1,31 +1,41 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Hero from '../../Components/HomePage/Hero/Hero'
-import MainNavigation from '../../Components/SharedComponents/MainNavigation/MainNavigation'
-import HomeInfo from '../../Components/HomePage/HomeInfo/HomeInfo'
-import ImageCarousel from '../../Components/HomePage/ImageCarousel/ImageCarousel'
-import Footer from '../../Components/SharedComponents/Footer/Footer'
+import { useState } from "react";
+import Head from "next/head";
+import Image from "next/image";
+import Hero from "../../Components/HomePage/Hero/Hero";
+import MainNavigation from "../../Components/SharedComponents/MainNavigation/MainNavigation";
+import HomeInfo from "../../Components/HomePage/HomeInfo/HomeInfo";
+import ImageCarousel from "../../Components/HomePage/ImageCarousel/ImageCarousel";
+import Footer from "../../Components/SharedComponents/Footer/Footer";
+import SlideMenu from "../../Components/SharedComponents/MainNavigation/localComponents/SlideMenu/SlideMenu";
 
-import classes from '../../styles/Home.module.scss'
+import classes from "../../styles/Home.module.scss";
 
 const HomePage = () => {
-    return (
-        <>
-          <Head>
+  const [openHamburger, setOpenHamburger] = useState(false);
+
+  const hamburgerClickHandler = () => {
+    setOpenHamburger((prevState) => !prevState);
+  };
+  return (
+    <>
+      <Head>
         <title>Isler Custom Gun Works Home Page</title>
-        <meta name="description" content="Isler Custom Gun Works Home Handguards MPX Upper-Assemblies Picatinny" />
+        <meta
+          name="description"
+          content="Isler Custom Gun Works Home Handguards MPX Upper-Assemblies Picatinny"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-        <main className={classes['page-container']}>
-        <MainNavigation />
-            <Hero />
-            <HomeInfo />
-            <ImageCarousel />
-            <Footer />
+      <main className={classes["page-container"]}>
+        <MainNavigation clickHandler={hamburgerClickHandler} />
+        {openHamburger && <SlideMenu />}
+        <Hero />
+        <HomeInfo />
+        <ImageCarousel />
+        <Footer />
+      </main>
+    </>
+  );
+};
 
-        </main>
-        </>
-    )
-}
-
-export default HomePage
+export default HomePage;

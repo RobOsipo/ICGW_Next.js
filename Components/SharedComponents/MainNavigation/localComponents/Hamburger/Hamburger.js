@@ -2,12 +2,12 @@ import React from "react";
 
 import classes from "./Hamburger.module.scss";
 
-const Hamburger = () => {
+const Hamburger = ({clickHandler}) => {
   return (
     <>
       <input id="dropdown" className={classes["input-box"]} type="checkbox" />
 
-      <label htmlFor="dropdown" className={classes.dropdown}>
+      <label htmlFor="dropdown" className={classes.dropdown} onClick={clickHandler}>
         <span className={classes.hamburger}>
           <span className={`${classes["icon-bar"]} ${classes["top-bar"]}`}></span>
           <span
