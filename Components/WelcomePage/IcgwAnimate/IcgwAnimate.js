@@ -1,11 +1,11 @@
 import React from "react";
 
-import classes from "./IcgwAnimate.module.css";
+import classes from "./IcgwAnimate.module.scss";
 
 const IcgwAnimate = () => {
   return (
     <div className={classes.typewriter}>
-      <h1>Please Click To Enter.</h1>
+      <h1 className={classes.text}>Please Click To Enter.</h1>
     </div>
   );
 };

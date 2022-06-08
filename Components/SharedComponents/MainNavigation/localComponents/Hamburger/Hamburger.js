@@ -7,8 +7,8 @@ const Hamburger = () => {
     <>
       <input id="dropdown" className={classes["input-box"]} type="checkbox" />
 
-      <label for="dropdown" className={classes.dropdown}>
-        <span class={classes.hamburger}>
+      <label htmlFor="dropdown" className={classes.dropdown}>
+        <span className={classes.hamburger}>
           <span className={`${classes["icon-bar"]} ${classes["top-bar"]}`}></span>
           <span
             className={`${classes["icon-bar"]} ${classes["middle-bar"]}`}

@@ -1,0 +1,17 @@
+
+
+.logo {
+    margin-left: 5vw;
+    border: solid var(--fog-white) 1px;
+    color: var(--fog-white);
+    width: 90px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    h2 {
+        font-size: 2rem;
+    }
+}
