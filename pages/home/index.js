@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Hero from '../../Components/HomePage/Hero/Hero'
 import MainNavigation from '../../Components/SharedComponents/MainNavigation/MainNavigation'
+import ImageCarousel from '../../Components/HomePage/ImageCarousel/ImageCarousel'
 
 import classes from '../../styles/Home.module.scss'
 
@@ -16,6 +17,7 @@ const HomePage = () => {
         <main className={classes['page-container']}>
         <MainNavigation />
             <Hero />
+            <ImageCarousel />
         </main>
         </>
     )

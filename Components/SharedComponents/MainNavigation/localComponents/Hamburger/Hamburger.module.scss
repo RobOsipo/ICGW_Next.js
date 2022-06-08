@@ -1,52 +1,46 @@
-
 .input-box {
-    display: none;
+  display: none;
 }
 
-  
-  .dropdown { 
-    display: flex;
-    justify-content: space-between;
-    &:hover {
-        cursor: pointer;
-    }
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  &:hover {
+    cursor: pointer;
   }
-  
-  .hamburger { 
-    align-self: flex-end;
-  }
-  
-  
-  input[type=checkbox] + label {
-    .icon-bar {
-      display: block;
-      width: 32px;
-      height: 5px;
-      background-color: var(--fog-white);
-      margin: 4px;
-      transition: all 0.2s;
-    }
-    .top-bar {
-      transform: rotate(0);
-    }
-    .middle-bar {
-      opacity: 1;
-    }
-  }
-  
-  input[type=checkbox]:checked + label {
-    .top-bar {
-      transform: rotate(45deg);
-      transform-origin: 10% 10%;
-    }
-    .middle-bar {
-      opacity: 0;
-    }
-    .bottom-bar {
-      transform: rotate(-45deg);
-      transform-origin: 10% 90%;
-    }
-  }
+}
 
+.hamburger {
+  align-self: flex-end;
+}
 
+input[type="checkbox"] + label {
+  .icon-bar {
+    display: block;
+    width: 32px;
+    height: 5px;
+    background-color: var(--fog-white);
+    margin: 4px;
+    transition: all 0.2s;
+  }
+  .top-bar {
+    transform: rotate(0);
+  }
+  .middle-bar {
+    opacity: 1;
+  }
+}
 
+input[type="checkbox"]:checked + label {
+  .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+  .middle-bar {
+    opacity: 0;
+  }
+  .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+}

@@ -10,9 +10,6 @@ const MainNavigation = () => {
     <nav className={classes['main-navigation']}>
         <NavLogo />
         <Hamburger />
-
-
-
     </nav>
   )
 }
