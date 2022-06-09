@@ -1,0 +1,13 @@
+.card {
+    background: var(--fog-white);
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+    display: grid;
+    place-content: center;
+
+    p {
+        color: var(--fog-black);
+    }
+}

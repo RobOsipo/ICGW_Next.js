@@ -6,6 +6,7 @@ import HomeInfo from "../../Components/HomePage/HomeInfo/HomeInfo";
 import ImageCarousel from "../../Components/HomePage/ImageCarousel/ImageCarousel";
 import Footer from "../../Components/SharedComponents/Footer/Footer";
 import SlideMenu from "../../Components/SharedComponents/MainNavigation/localComponents/SlideMenu/SlideMenu";
+import CustomQuotes from '../../Components/SharedComponents/CustomQuotes/CustomQuotes'
 import SplitBg from '../../Components/HomePage/SplitBg/SplitBg'
 
 import classes from "../../styles/Home.module.scss";
@@ -33,6 +34,7 @@ const HomePage = () => {
         <SplitBg>
         <HomeInfo />
         <ImageCarousel />
+        <CustomQuotes />
         </SplitBg>
         <Footer />
       </main>

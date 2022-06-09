@@ -5,7 +5,8 @@ import classes from './SplitBg.module.scss'
 const SplitBg = ({children}) => {
   return (
     <section className={classes.split}>
-        {children}
+    {children}
+        
     </section>
   )
 }
