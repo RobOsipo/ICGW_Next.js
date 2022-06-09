@@ -22,7 +22,7 @@ const play = () => {
         <div className={classes.card}>
             <div className={classes.front}>
                 <h1>I G</h1>
-                <h1>C W</h1>
+                <h1 className={classes.bottom}>C W</h1>
                 
             </div>
             <div className={classes.back}>

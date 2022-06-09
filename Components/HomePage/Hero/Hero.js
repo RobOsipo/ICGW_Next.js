@@ -1,4 +1,5 @@
 import React from 'react'
+import HeroContent from './localComponents/HeroContent'
 
 
 import classes from './Hero.module.scss'
@@ -6,7 +7,7 @@ import classes from './Hero.module.scss'
 const Hero = () => {
   return (
     <section className={classes['hero-container']}>
-    <h1>Hero Section</h1>
+        <HeroContent />
     </section>
   )
 }

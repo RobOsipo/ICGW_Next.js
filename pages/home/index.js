@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
 import Hero from "../../Components/HomePage/Hero/Hero";
 import MainNavigation from "../../Components/SharedComponents/MainNavigation/MainNavigation";
 import HomeInfo from "../../Components/HomePage/HomeInfo/HomeInfo";
 import ImageCarousel from "../../Components/HomePage/ImageCarousel/ImageCarousel";
 import Footer from "../../Components/SharedComponents/Footer/Footer";
 import SlideMenu from "../../Components/SharedComponents/MainNavigation/localComponents/SlideMenu/SlideMenu";
+import SplitBg from '../../Components/HomePage/SplitBg/SplitBg'
 
 import classes from "../../styles/Home.module.scss";
 
@@ -30,8 +30,10 @@ const HomePage = () => {
         <MainNavigation clickHandler={hamburgerClickHandler} />
         {openHamburger && <SlideMenu />}
         <Hero />
+        <SplitBg>
         <HomeInfo />
         <ImageCarousel />
+        </SplitBg>
         <Footer />
       </main>
     </>

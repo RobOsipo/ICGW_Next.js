@@ -55,11 +55,18 @@
 .front {
   display: flex;
   flex-direction: wrap;
+  
 
   h1 {
-    font-size: 8rem;
-    // font-family: var(--professional);
+    position: relative;
+    bottom: 2.20rem;
+    font-size: 8.3rem;
+    font-family: var(--professional);
   }
+}
+
+.bottom {
+  margin-bottom: 3.5rem;;
 }
 
 .back {
