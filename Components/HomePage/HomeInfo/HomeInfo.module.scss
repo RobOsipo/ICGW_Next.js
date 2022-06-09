@@ -11,14 +11,12 @@
     text-align: center;
 }
 
-.contact {
-    margin: 0 auto;
-}
 
-.title {
+.title, .info-item, .contact {
     margin: 0 auto;
     color: var(--fog-black);
 }
+
 
 .span {
     padding-left: 1rem;

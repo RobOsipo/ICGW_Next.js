@@ -1,7 +1,7 @@
 
 .draw-border {
-    box-shadow: inset 0 0 0 4px var(--fog-white);
-    color: var(--fog-white);
+    box-shadow: inset 0 0 0 4px var(--fog-black);
+    color: var(--fog-black);
     transition: color 0.25s 0.0833333333s;
     position: relative;
    }
