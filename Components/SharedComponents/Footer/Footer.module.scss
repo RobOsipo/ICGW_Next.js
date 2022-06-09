@@ -1,8 +1,21 @@
 
 .footer {
+    border-top: solid 5px var(--fog-black);
     background-color: var(--dark-blue);
     width: 100vw;
-    height: 5rem;
+    height: 45vh;
+    
     display: grid;
     place-content: center;
+    position: relative;
+}
+
+.fb {
+    padding-right: 1rem;
+}
+
+.p {
+    position: absolute;
+    bottom: 6rem;
+    right: 8rem;
 }
