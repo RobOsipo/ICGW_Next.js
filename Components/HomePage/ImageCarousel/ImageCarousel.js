@@ -2,6 +2,8 @@ import {useState} from 'react'
 import Link from "next/link";
 import {useRouter} from "next/router";
 import Image from 'next/image'
+import LeftArrow from '../../../svg/LeftArrow'
+import RightArrow from '../../../svg/RightArrow'
 
 import classes from './carousel.module.css'
 
@@ -40,8 +42,8 @@ export default () => {
   return (
     <div className={classes.slider}>
       
-        <div className={classes.next} onClick={nextSlideHandler}><p>next</p></div>
-        <div className={classes.prev} onClick={prevSlideHandler}><p>Previous</p></div>
+        <div className={classes.next} onClick={nextSlideHandler}><RightArrow /></div>
+        <div className={classes.prev} onClick={prevSlideHandler}><LeftArrow /></div>
       <div className={classes.slides}>
         <div name="slide-1" id="slide-1" className={classes.slide}>
           <Image src={one} alt="image" />

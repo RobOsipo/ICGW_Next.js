@@ -10,6 +10,10 @@
   
 }
 
+.next:hover {
+  cursor: pointer;
+}
+
 .prev {
   position: absolute;
   left: 0;
@@ -18,6 +22,11 @@
   background-color: var(--fog-white);
   width: 5rem;
   z-index: 1;
+  
+}
+
+.prev:hover {
+  cursor: pointer;
 }
   
   .slider {
