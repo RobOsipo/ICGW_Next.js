@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from 'next/link'
 import Head from "next/head";
 import Hero from "../../Components/HomePage/Hero/Hero";
 import MainNavigation from "../../Components/SharedComponents/MainNavigation/MainNavigation";
@@ -6,7 +7,8 @@ import HomeInfo from "../../Components/HomePage/HomeInfo/HomeInfo";
 import ImageCarousel from "../../Components/HomePage/ImageCarousel/ImageCarousel";
 import Footer from "../../Components/SharedComponents/Footer/Footer";
 import SlideMenu from "../../Components/SharedComponents/MainNavigation/localComponents/SlideMenu/SlideMenu";
-import SplitBg from '../../Components/HomePage/SplitBg/SplitBg'
+import SplitBg from "../../Components/HomePage/SplitBg/SplitBg";
+import UpArrow from '../../svg/UpArrow'
 
 import classes from "../../styles/Home.module.scss";
 
@@ -16,6 +18,7 @@ const HomePage = () => {
   const hamburgerClickHandler = () => {
     setOpenHamburger((prevState) => !prevState);
   };
+
   return (
     <>
       <Head>
@@ -26,15 +29,21 @@ const HomePage = () => {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={classes["page-container"]}>
+      <main className={classes["page-container"]} id="top">
         <MainNavigation clickHandler={hamburgerClickHandler} />
+
         {openHamburger && <SlideMenu />}
         <Hero />
-        <SplitBg>
-        <HomeInfo />
-        <ImageCarousel />
         
+        <SplitBg>
+          <HomeInfo />
+          <ImageCarousel />
+          <div className={classes.top}>
+
+          <Link href="#top"><a className={classes.anchor}><span><UpArrow /></span>Back to top</a></Link>
+          </div>
         </SplitBg>
+
         <Footer />
       </main>
     </>
