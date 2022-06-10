@@ -1,4 +1,24 @@
 
+.next {
+  position: absolute;
+  right: 0rem;
+  border: solid var(--fog-black) 1px;
+  color: var(--fog-black);
+  background-color: var(--fog-white);
+  width: 5rem;
+  z-index: 1;
+  
+}
+
+.prev {
+  position: absolute;
+  left: 0;
+  border: solid var(--fog-black) 1px;
+  color: var(--fog-black);
+  background-color: var(--fog-white);
+  width: 5rem;
+  z-index: 1;
+}
   
   .slider {
     padding: 2rem;
@@ -6,6 +26,7 @@
     text-align: center;
     overflow: hidden;
     margin: 0 auto;
+    position: relative;
   }
   
   .slides {
