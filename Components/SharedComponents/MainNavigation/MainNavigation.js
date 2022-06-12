@@ -12,6 +12,7 @@ const MainNavigation = ({clickHandler}) => {
   return (
     <nav className={classes['main-navigation']}>
         <NavLogo />
+        <NavList flex="row" />
         <Hamburger clickHandler={clickHandler} />
     </nav>
   )

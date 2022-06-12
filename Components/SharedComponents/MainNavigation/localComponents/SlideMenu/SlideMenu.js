@@ -6,7 +6,7 @@ import classes from './SlideMenu.module.scss'
 const SlideMenu = () => {
   return (
     <div className={classes['slide-menu']}>
-        <NavList />
+        <NavList flex="column" />
     </div>
   )
 }
