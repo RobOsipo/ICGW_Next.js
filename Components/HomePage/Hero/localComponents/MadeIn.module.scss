@@ -1,0 +1,12 @@
+
+
+.made {
+    font-family: var(--roboto);
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 2rem;
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-image: url('../../../../public/sharedImages/usa-us-flag.gif');
+    position: absolute;
+    bottom: 8rem;
+}

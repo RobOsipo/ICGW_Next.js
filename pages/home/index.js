@@ -31,7 +31,7 @@ const HomePage = () => {
       </Head>
       <main className={classes["page-container"]} id="top">
         <MainNavigation clickHandler={hamburgerClickHandler} />
-
+          
         {openHamburger && <SlideMenu />}
         <Hero />
         

@@ -1,6 +1,6 @@
 
 .hero-content {
-    // border: solid red 1px;
+    border: solid red 1px;
     width: 600px;
     height: 170px; 
     display: flex;
@@ -9,9 +9,16 @@
     align-items: flex-end;
    margin: 0 0 0 auto;
   margin-right: 10px;
+
+  @media (min-width: 768px) {
+      
+  }
 }
 
 .text {
     text-align: center;
     font-size: 1rem;
+    @media (min-width: 850px) {
+      font-size: 1.15rem;
+    }
 }

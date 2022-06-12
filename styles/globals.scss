@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@0,500&display=swap');
+
 :root {
   // colors
   --black: #000;
@@ -26,6 +28,7 @@
   --lato: "Lato", sans-serif;
   --sans: "Open Sans", "Lato", sans-serif;
   --professional: 'Nuosu SIL', serif;
+  --roboto: 'Roboto', sans-serif;
 
   // Spacing
   --space-xxxs: 0.25rem;
