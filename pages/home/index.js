@@ -35,14 +35,14 @@ const HomePage = () => {
         {openHamburger && <SlideMenu />}
         <Hero />
         
-        <SplitBg>
+        
           <HomeInfo />
           <ImageCarousel />
           <div className={classes.top}>
 
           <Link href="#top"><a className={classes.anchor}><span><UpArrow /></span>Back to top</a></Link>
           </div>
-        </SplitBg>
+        
 
         <Footer />
       </main>

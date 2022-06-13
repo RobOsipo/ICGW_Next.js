@@ -9,4 +9,17 @@
     -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-image: url('../../../../public/sharedImages/usa-us-flag.gif');
     position: absolute;
     bottom: 8rem;
+
+    @media (min-width: 1050px) {
+        font-size: 2.2rem;
+    }
+
+    @media (min-width: 1350px) {
+        bottom: 5rem;
+    }
+
+    @media (min-width: 1500px) {
+        bottom: 3rem;
+        font-size: 2.4rem;
+    }
 }
