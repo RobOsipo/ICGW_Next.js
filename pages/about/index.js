@@ -2,6 +2,8 @@ import Head from "next/head";
 import MainNavigation from '../../Components/SharedComponents/MainNavigation/MainNavigation'
 import Hero from '../../Components/AboutPage/Hero/Hero'
 import AboutInfo from '../../Components/AboutPage/AboutInfo/AboutInfo'
+import ImageCarousel from '../../Components/AboutPage/ImageCarousel/ImageCarousel'
+import Footer from '../../Components/SharedComponents/Footer/Footer'
 
 import classes from '../../styles/About.module.scss'
 
@@ -20,6 +22,8 @@ const AboutPage = () => {
         <MainNavigation />
         <Hero />
         <AboutInfo />
+        <ImageCarousel />
+        <Footer />
       </main>
     </>
   );

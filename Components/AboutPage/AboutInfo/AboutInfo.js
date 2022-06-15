@@ -1,10 +1,12 @@
 import React from "react";
+import FlagText from './localComponents/FlagText'
 
 import classes from "./AboutInfo.module.scss";
 
 const AboutInfo = () => {
   return (
     <section className={classes["info-container"]}>
+    <FlagText />
       <h3 className={classes.title}>
         WHY COMPROMISE BETWEEN FORM AND FUNCTION?
       </h3>
