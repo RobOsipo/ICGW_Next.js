@@ -1,11 +1,21 @@
 
 
 .info-container {
-    height: 100vh;
+    height: 90vh;
     width: 100%;
-    background-color: gray;
+    background-color: var(--fog-black-two);
+    text-shadow: rgb(90, 89, 89) 0px 0px 7px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+.title {
+    margin: 0 auto 0 1rem;
+}
+
+.info-item {
+    width: 500px;
+    // text-align: center;
 }
