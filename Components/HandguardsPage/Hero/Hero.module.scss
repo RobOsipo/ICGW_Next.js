@@ -1,7 +1,40 @@
 
 
 .hero-container {
-    height: 80vh;
-    width: 100%;
-    background: gray;
+    min-height: 70vh;
+    max-width: 100%;
+    background-image: url('../../../public/handguardImages/darkHero.jpg');
+    background-color: rgb(121, 120, 120);
+    background-blend-mode: overlay;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.hero-info-container {
+    border: solid red 1px;
+    min-width: 300px;
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+.top {
+    text-align: left;
+}
+
+
+.middle {
+    text-align: center;
+}
+
+.bottom {
+    text-align: right;
+    padding-right: 1rem;
 }

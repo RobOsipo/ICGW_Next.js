@@ -1,6 +1,12 @@
 
 .product-list-container {
-    height: 100vh;
+    height: 50vh;
     width: 100%;
     background: aliceblue;
+    display: grid;
+    place-content: center;
+
+    h1 {
+        color: black;
+    }
 }

@@ -1,0 +1,18 @@
+
+
+.info-container {
+    display: flex;
+    min-height: 40vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    border-bottom: 1px solid var(--fog-white);
+}
+
+.info {
+    max-width: 500px;
+}

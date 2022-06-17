@@ -1,6 +1,7 @@
 import React from 'react'
 import MainNavigation from '../../Components/SharedComponents/MainNavigation/MainNavigation'
 import Hero from '../../Components/HandguardsPage/Hero/Hero'
+import WhatWeDo from '../../Components/HandguardsPage/WhatWeDo/WhatWeDo'
 import ProductList from '../../Components/HandguardsPage/ProductList/ProductList'
 import Footer from '../../Components/SharedComponents/Footer/Footer'
 
@@ -11,6 +12,7 @@ const HandguardsPage = () => {
     <main className={classes['page-container']}>
         <MainNavigation />
         <Hero />
+        <WhatWeDo />
         <ProductList />
         <Footer />
     </main>
