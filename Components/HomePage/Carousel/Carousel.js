@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Image from 'next/image'
 
 import Carousel from 'react-bootstrap/Carousel';
@@ -23,10 +23,16 @@ import sixteen from '../../../public/homeImages/workbench.jpg'
 import seventeen from '../../../public/homeImages/gunRange2.jpg'
 
 const HomeCarousel = () => {
+    const [index, setIndex] = useState(0);
+
+    const handleSelect = (selectedIndex, e) => {
+      setIndex(selectedIndex);
+    }
+
     return (
         <div id={classes.id} >
-          <Carousel variant="dark">
-            <Carousel.Item >
+          <Carousel activeIndex={index} onSelect={handleSelect} variant="dark">
+            <Carousel.Item interval={null} >
               {/* <img
                 className="d-block w-100"
                 src="https://i.ibb.co/2WhdH9b/gunUSA.jpg"
@@ -39,7 +45,7 @@ const HomeCarousel = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item >
+            <Carousel.Item interval={null} >
               <Image src={two} alt="Image Two" />
               <Carousel.Caption>
                 <h3>Label for second slide</h3>
@@ -47,7 +53,7 @@ const HomeCarousel = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item >
+            <Carousel.Item interval={null} >
               <Image src={three} alt="Image Two" />
               <Carousel.Caption>
                 <h3>Label for second slide</h3>
@@ -55,7 +61,7 @@ const HomeCarousel = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item >
+            <Carousel.Item interval={null} >
               <Image src={four} alt="Image Two" />
               <Carousel.Caption>
                 <h3>Label for second slide</h3>
@@ -63,7 +69,7 @@ const HomeCarousel = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item >
+            <Carousel.Item interval={null} >
               <Image src={five} alt="Image Two" />
               <Carousel.Caption>
                 <h3>Label for second slide</h3>
@@ -71,7 +77,7 @@ const HomeCarousel = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item >
+            <Carousel.Item interval={null} >
               <Image src={six} alt="Image Two" />
               <Carousel.Caption>
                 <h3>Label for second slide</h3>
@@ -79,7 +85,7 @@ const HomeCarousel = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item >
+            <Carousel.Item interval={null} >
               <Image src={seven} alt="Image Two" />
               <Carousel.Caption>
                 <h3>Label for second slide</h3>
@@ -87,7 +93,7 @@ const HomeCarousel = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item >
+            <Carousel.Item interval={null} >
               <Image src={eight} alt="Image Two" />
               <Carousel.Caption>
                 <h3>Label for second slide</h3>
@@ -95,7 +101,7 @@ const HomeCarousel = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item >
+            <Carousel.Item interval={null} >
               <Image src={nine} alt="Image Two" />
               <Carousel.Caption>
                 <h3>Label for second slide</h3>
@@ -103,7 +109,7 @@ const HomeCarousel = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item >
+            <Carousel.Item interval={null} >
               <Image src={ten} alt="Image Two" />
               <Carousel.Caption>
                 <h3>Label for second slide</h3>
@@ -111,7 +117,7 @@ const HomeCarousel = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item >
+            <Carousel.Item interval={null} >
               <Image src={eleven} alt="Image Two" />
               <Carousel.Caption>
                 <h3>Label for second slide</h3>
@@ -119,7 +125,7 @@ const HomeCarousel = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item >
+            <Carousel.Item interval={null} >
               <Image src={twelve} alt="Image Two" />
               <Carousel.Caption>
                 <h3>Label for second slide</h3>
@@ -127,7 +133,7 @@ const HomeCarousel = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item >
+            <Carousel.Item interval={null} >
               <Image src={thirteen} alt="Image Two" />
               <Carousel.Caption>
                 <h3>Label for second slide</h3>
@@ -135,7 +141,7 @@ const HomeCarousel = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item >
+            <Carousel.Item interval={null} >
               <Image src={fourteen} alt="Image Two" />
               <Carousel.Caption>
                 <h3>Label for second slide</h3>
@@ -143,7 +149,7 @@ const HomeCarousel = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item >
+            <Carousel.Item interval={null} >
               <Image src={fifteen} alt="Image Two" />
               <Carousel.Caption>
                 <h3>Label for second slide</h3>
@@ -151,7 +157,7 @@ const HomeCarousel = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item >
+            <Carousel.Item interval={null} >
               <Image src={sixteen} alt="Image Two" />
               <Carousel.Caption>
                 <h3>Label for second slide</h3>
@@ -159,7 +165,7 @@ const HomeCarousel = () => {
               </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item >
+            <Carousel.Item interval={null} >
               <Image src={seventeen} alt="Image Two" />
               <Carousel.Caption>
                 <h3>Label for second slide</h3>

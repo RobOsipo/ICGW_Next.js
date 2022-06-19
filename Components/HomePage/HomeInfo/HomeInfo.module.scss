@@ -29,5 +29,15 @@
 
 
 .span {
-    padding-left: 1rem;
+    margin-left: 1rem;
+    border: solid var(--fog-white) 1px;
+    border-radius:5px;
+    transition: all 200ms ease;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        // color: var(--fog-black-two);
+        // background-color: var(--fog-white);
+    }
 }

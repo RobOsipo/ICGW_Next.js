@@ -17,4 +17,8 @@
     justify-content: center;
     font-size: 1.5rem;
     padding: 3rem 0;
+
+    &:hover {
+        color: var(--fog-white);
+    }
 }
