@@ -43,7 +43,7 @@ const HomeInfo = () => {
      
       
         <h2 className={classes.contact}>
-          Want A Custom Build? <span className={classes.span}>Click Here</span>{" "}
+          Want A Custom Build? <button className={classes.span}>Click Here</button>{" "}
         </h2>
       
     </section>

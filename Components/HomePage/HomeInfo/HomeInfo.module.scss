@@ -28,16 +28,22 @@
 }
 
 
+
+
 .span {
     margin-left: 1rem;
     border: solid var(--fog-white) 1px;
+    background: transparent;
+    color: var(--fog-white);
+    width: 12rem;
     border-radius:5px;
     transition: all 200ms ease;
 
     &:hover {
         cursor: pointer;
         transform: scale(1.1);
-        // color: var(--fog-black-two);
+        color: var(--french-blue);
+        border: solid 1px var(--french-blue);
         // background-color: var(--fog-white);
     }
 }
