@@ -19,4 +19,4 @@ const upperAssembliesSchema = new Schema({
 
 mongoose.models = {}
 
-export default mongoose.models.Uppers || model('Upper', upperAssembliesSchema)
+export default mongoose.models.uppers || model('Upper', upperAssembliesSchema)

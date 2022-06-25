@@ -26,4 +26,4 @@ const handguardsSchema = new Schema({
 
 mongoose.models = {}
 
-export default mongoose.models.Handguards || model('Handguard', handguardsSchema)
+export default mongoose.models.handguards || model('Handguard', handguardsSchema)
